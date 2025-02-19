@@ -89,8 +89,9 @@ main_menu() {
         6) run_script "模型平台安装" ./install_model_platform.sh ;;
         7) run_script "训练模型平台" ./训练模型.sh ;;
         8) run_script "系统优化" ./系统优化.sh ;;
-        9) run_script "推荐下载模型" ./webUl.sh ;;
-        10|q|Q) safe_exit ;;
+        9) run_script "推荐下载模型" ./ai推荐下载.sh ;;
+        10) run_script "webui" ./webUI.sh ;;
+        20|q|Q) safe_exit ;;
         *) show_error "无效输入！请输入1-10之间的数字" ;;
     esac
 
