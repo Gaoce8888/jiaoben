@@ -73,6 +73,9 @@ main_menu() {
     echo -e " 7. 训练模型平台"
     echo -e " 8. 系统优化"
     echo -e " 9. 推荐下载模型"
+    echo -e " 10. webui"
+    echo -e " 11. 显卡检测"
+    
     echo -e "10. 退出系统"
     echo -e "╚════════════════════════════════════════╝"
     echo -e "${YELLOW}提示: 输入数字选择操作，输入q可随时退出${RESET}"
@@ -91,6 +94,7 @@ main_menu() {
         8) run_script "系统优化" ./系统优化.sh ;;
         9) run_script "推荐下载模型" ./ai推荐下载.sh ;;
         10) run_script "webui" ./webUI.sh ;;
+        11) run_script "显卡检测" ./显卡.sh ;;
         20|q|Q) safe_exit ;;
         *) show_error "无效输入！请输入1-10之间的数字" ;;
     esac
